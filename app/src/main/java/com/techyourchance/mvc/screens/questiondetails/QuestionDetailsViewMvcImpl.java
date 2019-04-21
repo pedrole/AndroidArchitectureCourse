@@ -53,6 +53,9 @@ public class QuestionDetailsViewMvcImpl extends BaseObservableViewMvc<QuestionDe
                 }
             }
         });
+
+
+
     }
 
     @Override

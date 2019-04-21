@@ -20,7 +20,7 @@ import com.techyourchance.mvc.screens.common.ViewMvcFactory;
 
 import java.util.List;
 
-public class QuestionsListViewMvcImpl extends BaseNavDrawerViewMvc<QuestionsListViewMvc.Listener>
+public abstract class QuestionsListViewMvcImpl extends BaseNavDrawerViewMvc<QuestionsListViewMvc.Listener>
         implements QuestionsListViewMvc, QuestionsRecyclerAdapter.Listener {
 
     private final ToolbarViewMvc mToolbarViewMvc;
@@ -48,6 +48,8 @@ public class QuestionsListViewMvcImpl extends BaseNavDrawerViewMvc<QuestionsList
         mToolbarViewMvc = viewMvcFactory.getToolbarViewMvc(mToolbar);
         mToolbarViewMvc.setTitle(getString(R.string.questions_list_screen_title));
         mToolbar.addView(mToolbarViewMvc.getRootView());
+
+      mToolbarViewMvc.enableHamburger();
     }
 
     @Override

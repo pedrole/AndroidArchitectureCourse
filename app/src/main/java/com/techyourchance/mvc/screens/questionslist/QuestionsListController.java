@@ -16,6 +16,8 @@ public class QuestionsListController  implements
 
     private QuestionsListViewMvc mViewMvc;
 
+
+
     public QuestionsListController(FetchLastActiveQuestionsUseCase fetchLastActiveQuestionsUseCase,
                                    ScreensNavigator screensNavigator,
                                    ToastsHelper toastsHelper) {
@@ -50,6 +52,9 @@ public class QuestionsListController  implements
     public void onQuestionsListClicked() {
         // this is the questions list screen - no-op
     }
+
+
+
 
     @Override
     public void onLastActiveQuestionsFetched(List<Question> questions) {

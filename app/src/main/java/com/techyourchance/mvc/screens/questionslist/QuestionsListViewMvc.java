@@ -11,6 +11,8 @@ public interface QuestionsListViewMvc extends ObservableViewMvc<QuestionsListVie
         void onQuestionClicked(Question question);
 
         void onQuestionsListClicked();
+
+
     }
 
     void bindQuestions(List<Question> questions);
